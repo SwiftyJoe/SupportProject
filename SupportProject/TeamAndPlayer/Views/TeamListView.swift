@@ -10,7 +10,7 @@ struct TeamListView: View {
     
     
     ///Observed Properties
-    @Bindable var teamController: TeamController
+    @ObservedObject var teamController: TeamController
     var playerController: PlayerController
 
     @State private var showAddTeam = false

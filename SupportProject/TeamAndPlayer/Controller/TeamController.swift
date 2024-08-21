@@ -7,14 +7,13 @@ import Foundation
 
 /// A Controller containing and controlling all relevant elements for the Teams
 ///  
-/// In diesem Controller werden alle Steuervariablen und alle Funktionen zum kontrollieren der Teams vorgehalten und kontrolliert.
-@Observable
-class TeamController {
+
+class TeamController: ObservableObject {
     
 
-    var selectedTeam: Team?
-    var teamName = ""
-    var showDuplicateNameAlert: Bool = false
+    @Published var selectedTeam: Team?
+    @Published var teamName = ""
+    @Published var showDuplicateNameAlert: Bool = false
 
     
     /// A function to reset all properties from teamController to default

@@ -10,7 +10,7 @@ struct TeamAddEditView: View {
     @Environment(\.dismiss) var dismiss
     
     ///Observed Properties
-    @Bindable var teamController: TeamController
+    @ObservedObject var teamController: TeamController
     
     
     var body: some View {
