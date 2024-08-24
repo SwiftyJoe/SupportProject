@@ -8,7 +8,7 @@ struct CoreTeamApp: App {
     
     ///Observed Properties
     @State private var dataController = DataController()
-    @StateObject var teamController = TeamController()
+    @State var teamController = TeamController()
     @State var playerController = PlayerController()
     
     var body: some Scene {

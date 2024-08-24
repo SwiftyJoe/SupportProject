@@ -8,12 +8,13 @@ import Foundation
 /// A Controller containing and controlling all relevant elements for the Teams
 ///  
 
+@Observable
 class TeamController: ObservableObject {
     
 
-    @Published var selectedTeam: Team?
-    @Published var teamName = ""
-    @Published var showDuplicateNameAlert: Bool = false
+    var selectedTeam: Team?
+    var teamName = ""
+    var showDuplicateNameAlert: Bool = false
 
     
     /// A function to reset all properties from teamController to default
